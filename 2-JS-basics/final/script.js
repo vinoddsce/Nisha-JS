@@ -1,5 +1,13 @@
 
 
+var num = 100;
+
+function displayNum() {
+    var num = 0;
+    console.log("Num: ", num);
+}
+
+displayNum();
 
 /*****************************
 * Variables and data types
