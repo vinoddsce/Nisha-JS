@@ -12,15 +12,15 @@
 //     job: 'teacher'
 // };
 
-var Person = function (name, yearOfBirth, job) {
-    this.name = name;
-    this.yearOfBirth = yearOfBirth;
-    this.job = job;
+// var Person = function (name, yearOfBirth, job) {
+//     this.name = name;
+//     this.yearOfBirth = yearOfBirth;
+//     this.job = job;
 
-    this.displayYearOfBirth = function () {
-        console.log(this.yearOfBirth);
-    }
-}
+//     this.displayYearOfBirth = function () {
+//         console.log(this.yearOfBirth);
+//     }
+// }
 //
 //Person.prototype.calculateAge = function () {
 //    console.log(2019 - this.yearOfBirth);
@@ -53,19 +53,17 @@ var Person = function (name, yearOfBirth, job) {
 // Lecture: Object.create
 
 
-//var personProto = {
-////    yearOfBirth: 0,
-//    calculateAge: function() {
-//        console.log(2016 - this.yearOfBirth);
-//    }
-//};
+// var personProto = {
+//     yearOfBirth: 0,
+//     calculateAge: function () {
+//         console.log(2016 - this.yearOfBirth);
+//     }
+// };
 
-//var john = Object.create(personProto);
-//john.name = 'John';
-//john.yearOfBirth = 1990;
-//john.job = 'teacher';
+// var john = Object.create(personProto);
+
 //
-//console.log(john.yearOfBirth)
+// console.log(john);
 
 
 //var jane = Object.create(personProto, {
@@ -395,29 +393,29 @@ console.log(rates);
 //
 //
 // Another cool example
-var years = [1990, 1965, 1937, 2005, 1998];
+// var years = [1990, 1965, 1937, 2005, 1998];
 
-function arrayCalc(arr, fn) {
-    var arrRes = [];
-    for (var i = 0; i < arr.length; i++) {
-        arrRes.push(fn(arr[i]));
-        console.log(arrRes);
-    }
-    return arrRes;
-}
+// function arrayCalc(arr, fn) {
+//     var arrRes = [];
+//     for (var i = 0; i < arr.length; i++) {
+//         arrRes.push(fn(arr[i]));
+//         console.log(arrRes);
+//     }
+//     return arrRes;
+// }
 
-function calculateAge(el) {
-    return 2019 - el;
-}
+// function calculateAge(el) {
+//     return 2019 - el;
+// }
 
-function isFullAge(limit, el) {
-    return el >= limit;
-}
+// function isFullAge(limit, el) {
+//     return el >= limit;
+// }
 
-var ages = arrayCalc(years, calculateAge);
-console.log(ages);
+// var ages = arrayCalc(years, calculateAge);
+// console.log(ages);
 
-var fullJapan = arrayCalc(ages, isFullAge.bind(this, 20));
+// var fullJapan = arrayCalc(ages, isFullAge.bind(this, 20));
 //console.log(ages);
 //console.log(fullJapan);
 

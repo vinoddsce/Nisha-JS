@@ -3,7 +3,7 @@
 
 
 
-var n = [15, 6, -2, 66, 32, 87, 1, 54, 0, 73];
+// var n = [15, 6, -2, 66, 32, 87, 1, 54, 0, 73];
 
 
 // var result = [];
@@ -26,11 +26,51 @@ var n = [15, 6, -2, 66, 32, 87, 1, 54, 0, 73];
 //     }
 // }
 
-var result = n.filter(function (value) {
-    return value > 0;
-});
+// var result = n.filter(function (value) {
+//     return value > 0;
+// });
 
-console.log("Actual: ", n);
-console.log("Result: ", result);
+// console.log("Actual: ", n);
+// console.log("Result: ", result);
+
+
+
+// id
+// name
+// phone
+// purchase: 100.2
+// var Customer = function() {
+// }
+
+// Create some objects UPTO 10
+
+// Collect customers whose purchase is >= 5
+
+
+
+
+function first() {
+    var value = 200;
+    return function inner() {
+        console.log("inner(): ", value);
+    }
+}
+
+// console.log(first());
+// var result = first();
+// result();
+
+first()();
+
+
+// function main(fun) {
+//     fun();
+// }
+
+// function display() {
+//     console.log("Hello !!!!");
+// }
+
+// main(display);
 
 
