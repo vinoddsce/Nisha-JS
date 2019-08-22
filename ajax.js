@@ -2,17 +2,17 @@
 
 
 
-function callback() {
-    console.log("callback() is called !!!!!");
-}
+// function callback() {
+//     console.log("callback() is called !!!!!");
+// }
 
-function first() {
-    console.log("first() called !!!");
-    setTimeout(callback, 2000);
-    console.log("first() end !!!");
-}
+// function first() {
+//     console.log("first() called !!!");
+//     setTimeout(callback, 2000);
+//     console.log("first() end !!!");
+// }
 
-first();
+// first();
 
 
 // function createHeader(event) {

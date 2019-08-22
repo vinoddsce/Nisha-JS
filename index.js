@@ -49,18 +49,18 @@
 
 
 
-function first() {
-    var value = 200;
-    return function inner() {
-        console.log("inner(): ", value);
-    }
-}
+// function first() {
+//     var value = 200;
+//     return function inner() {
+//         console.log("inner(): ", value);
+//     }
+// }
 
 // console.log(first());
 // var result = first();
 // result();
 
-first()();
+// first()();
 
 
 // function main(fun) {
@@ -72,5 +72,7 @@ first()();
 // }
 
 // main(display);
+
+
 
 
