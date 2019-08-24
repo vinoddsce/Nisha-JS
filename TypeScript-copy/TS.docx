@@ -1,0 +1,14 @@
+TypeScript (TS) is the superscript of JS. 
+
+Any valid JS code is also a valid TS code. 
+
+
+
+
+npm install -g typescript@latest
+
+
+
+Transpilations
+
+NPM - Node Package Manager
