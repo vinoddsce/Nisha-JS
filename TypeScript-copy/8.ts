@@ -25,7 +25,7 @@
 //     y: 2
 // });
 
-// // // What if we write another function as below ??
+// What if we write another function as below ??
 
 // let getDistance = (pointA: Point, pointB: Point) => {
 //     // ..
@@ -63,7 +63,7 @@ interface Point {
 //     }
 // }
 
-// let n: number = 100;
+let n: number = 100;
 
 // let p1: PointImpl = new PointImpl();
 // p1.x = 100;
@@ -77,33 +77,30 @@ interface Point {
 // p2.drawPoint();
 
 
-
-
-
-class PointClass {
-    private x: number;
-    private y: number;
-
-    constructor(n1: number, n2: number) {
-        this.x = n1;
-        this.y = n2;
-    }
+class PointClass implements Point {
+    x: number;
+    y: number;
 
     drawPoint(): void {
-        console.log("X: ", this.x, ", Y: ", this.y);
-    }
-    getDistance(point: Point): number {
+        console.log("drawPoint");
+    };
+    getDistance(another: Point): number {
+        console.log("getDistance");
         return 100;
-    }
-
-    setX(n: number): void {
-        this.x = n;
     }
 }
 
-let point1: PointClass = new PointClass(1, 2);
-point1.setX(12121);
-point1.drawPoint();
+// let p = new Point();
+// p.x = 100;
+// p.y = 200;
+// p.drawPoint();
+
+// let p2 = new Point();
+// p2.x = 100;
+// p2.y = 200;
+// p.getDistance(p2);
+
+
 
 
 // Using class
@@ -124,25 +121,30 @@ point1.drawPoint();
 //     }
 // }
 
-// class PointClass implements Point {
-//     x: number;
-//     y: number;
+// class PointClass {
+//     private x: number;
+//     private y: number;
+
+//     constructor(n1: number, n2: number) {
+//         this.x = n1;
+//         this.y = n2;
+//     }
 
 //     drawPoint(): void {
-//         console.log("drawPoint");
-//     };
-//     getDistance(another: Point): Point {
-//         console.log("getDistance");
-//         return new PointClass();
+//         console.log("X: ", this.x, ", Y: ", this.y);
+//     }
+//     getDistance(point: Point): number {
+//         return 100;
+//     }
+
+//     setX(n: number): void {
+//         this.x = n;
 //     }
 // }
 
-// let p = new Point();
-// p.x = 100;
-// p.y = 200;
-// p.drawPoint();
+// let point1: PointClass = new PointClass(1, 2);
+// point1.setX(12121);
+// point1.drawPoint();
 
-// let p2 = new Point();
-// p2.x = 100;
-// p2.y = 200;
-// p.getDistance(p2);
+
+
