@@ -44,12 +44,12 @@
 // In interface we cann't have implementations, we can have only declarations. 
 // Rewriting the Point interface
 
-interface Point {
-    x: number,
-    y: number,
-    drawPoint: () => void,
-    getDistance: (another: Point) => number
-}
+// interface Point {
+//     x: number,
+//     y: number,
+//     drawPoint: () => void,
+//     getDistance: (another: Point) => number
+// }
 
 
 // class PointImpl {
@@ -77,18 +77,18 @@ let n: number = 100;
 // p2.drawPoint();
 
 
-class PointClass implements Point {
-    x: number;
-    y: number;
+// class PointClass implements Point {
+//     x: number;
+//     y: number;
 
-    drawPoint(): void {
-        console.log("drawPoint");
-    };
-    getDistance(another: Point): number {
-        console.log("getDistance");
-        return 100;
-    }
-}
+//     drawPoint(): void {
+//         console.log("drawPoint");
+//     };
+//     getDistance(another: Point): number {
+//         console.log("getDistance");
+//         return 100;
+//     }
+// }
 
 // let p = new Point();
 // p.x = 100;

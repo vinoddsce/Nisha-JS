@@ -189,4 +189,23 @@ class Cuckoo implements Bird {
     makeNoise(): void {
         console.log("Kuhuuuu Kuhuuuuuu !!!!!");
     }
+    sing() {
+        console.log(" Cuckoo will sing when it's hungry !!!!!");
+    }
 }
+
+let bird1: Parrot = new Parrot();
+// bird1.makeNoise();
+
+let bird2: Cuckoo = new Cuckoo();
+bird2.makeNoise();
+bird2.sing();
+
+
+let b: Bird;
+b = bird1;
+b.makeNoise();
+
+b = bird2;
+b.makeNoise();
+b.sing();
