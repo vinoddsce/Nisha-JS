@@ -31,21 +31,19 @@
 //     key: data_type
 //     functions OR methods
 // }
-// class Student {
-//     id: number;
-//     name: string;
-//     course: string;
-//     constructor(id: number, name: string, course: string) {
-//         console.log("Student Constructor !!!! ");
-//         this.id = id;
-//         this.name = name;
-//         this.course = course;
-//     }
-//     getDetails() {
-//         console.log("ID: ", this.id, ", Name: ", this.name, ", Course: ", this.course);
-//     }
-// }
-// let s1 = new Student(1, "Pallavi", "AngularJS");
-// let s2 = new Student(2, "Nisha", "AngularJS");
-// s1.getDetails();
-// s2.getDetails();
+var Student = /** @class */ (function () {
+    function Student(id, name, course) {
+        this.id = id;
+        this.name = name;
+        this.course = course;
+        console.log("Student Constructor !!!! ");
+    }
+    Student.prototype.getDetails = function () {
+        console.log("ID: ", this.id, ", Name: ", this.name, ", Course: ", this.course);
+    };
+    return Student;
+}());
+var s1 = new Student(1, "Pallavi", "AngularJS");
+var s2 = new Student(2, "Nisha", "AngularJS");
+s1.getDetails();
+s2.getDetails();

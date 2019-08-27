@@ -41,29 +41,22 @@
 //     functions OR methods
 // }
 
-// class Student {
-//     id: number;
-//     name: string;
-//     course: string;
-
-//     constructor(id: number, name: string, course: string) {
-//         console.log("Student Constructor !!!! ");
-//         this.id = id;
-//         this.name = name;
-//         this.course = course;
-//     }
-
-//     getDetails() {
-//         console.log("ID: ", this.id, ", Name: ", this.name, ", Course: ", this.course);
-//     }
-// }
-
-// let s1 = new Student(1, "Pallavi", "AngularJS");
-// let s2 = new Student(2, "Nisha", "AngularJS");
 
 
-// s1.getDetails();
-// s2.getDetails();
+class Student {
+    constructor(private id: number, private name: string, private course: string) {
+        console.log("Student Constructor !!!! ");
+    }
+    getDetails() {
+        console.log("ID: ", this.id, ", Name: ", this.name, ", Course: ", this.course);
+    }
+}
+
+let s1 = new Student(1, "Pallavi", "AngularJS");
+let s2 = new Student(2, "Nisha", "AngularJS");
+
+s1.getDetails();
+s2.getDetails();
 
 
 
