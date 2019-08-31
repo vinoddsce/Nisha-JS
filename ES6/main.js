@@ -9,7 +9,19 @@
 // console.log(diag(4, 3)); // 5
 
 
-import * as lib from './lib.js';
+// import * as lib from './lib.js';
 
-console.log(lib.square(12)); // 121
-console.log(lib.diag(4, 3)); // 5
+// console.log(lib.square(12)); // 121
+// console.log(lib.diag(4, 3)); // 5
+
+
+var Person = function () {
+
+}
+// console.log(Person.prototype);
+
+
+var obj = new Object();
+console.log(obj);
+
+
