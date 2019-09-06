@@ -1,4 +1,9 @@
-const math = require('./math');
+import { square } from './math';
 
+import './style.css';
 
-console.log(math.square(100));
+var element = document.getElementById('result');
+
+element.innerText = 'Square of 100 is: ' + square(100);
+
+console.log(square(100));
