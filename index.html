@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <script type="text/javascript">
+
+        function updateElement(event) {
+            var element = document.getElementById("name");
+            element.innerHTML = "<span>VinodKumarM</span>";
+        }
+
+    </script>
+
 </head>
 
 <body>
 
     <div id="root">
 
+        <p id="name">No Name</p>
+        <button type="button" onclick="updateElement(this)">Update</button>
     </div>
 
-    <button onclick="loadData(this)">Create</button>
-    <!-- <script src="index.js"></script> -->
-    <script src="ajax.js"></script>
 </body>
 
 </html>
